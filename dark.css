@@ -1,28 +1,3 @@
-@font-face {
-    font-family: "Ninja Garden";
-    src: url(./Assets/Fonts/ninjagarden.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Edo SZ";
-    src: url(./Assets/Fonts/edo_sz.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Igiari";
-    src: url(./Assets/Fonts/igiari.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Neuzeit Grotesk";
-    src: url(./Assets/Fonts/neuzeit_grotesk.otf) format("opentype");
-}
-
-@font-face {
-    font-family: "Face Your Fears";
-    src: url(./Assets/Fonts/face_your_fears.ttf) format("truetype");
-}
-
 *{
     padding: 0;
     box-sizing: border-box;
@@ -31,107 +6,58 @@
 
 body, html {
     height: 100%;
-    background-color:#222222;
+    background-color:#111111;
     color:white;
-    font-family: "Neuzeit Grotesk", sans-serif;
+    font-family: Noto Sans, sans-serif;
     font-size: 15px;
 }
 
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Assets/images/RedDragon.jpg");
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+header{
+    width: 100%;
+    height: 115px;
+    background-color: #000000;
 }
 
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Edo SZ", sans-serif;
-}
-
-.btn-group .button_inactive {
-    background-color: #FF3C00;
-    border: none;
-    color: black;
-    padding: 15px 20px;
-    text-align: center;
+a#logo{
+    margin-right: 15px;
+    font-family: 'Compacta', sans-serif;
+    font-size: 75px;
+    color: #FF3C00;
+    float: right;
+    transition: 0.5s;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    float: left;
-    font-family: "Igiari", sans-serif;
 }
 
-.btn-group .button {
-    background-color: #FF3C00;
-    border: none;
+a#logo:hover{
+    color:#AA0000;
+}
+
+.hub{
     color: white;
-    padding: 15px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 20px;
     float: left;
-    font-family: "Igiari", sans-serif;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px;
+    transition: 0.5s;
 }
 
-.btn-group .button_inactive:hover {
-    background-color: #FF1A00;
-}
-
-.btn-group .button:hover {
-    background-color: #FF1A00;
+.hub:hover{
+    color: #FF3C00;
 }
 
 #container {
-    width: 1080px;
-    height: 1920px;
-    margin-left: 60px;
+    width: 100%;
     margin-top: 40px;
+    min-height: 725px;
+    max-height: 7250px;
 }
 
-.article {
-    text-align: justify;
-}
-
-.gameOfTheMonth{
-    border:5px solid #FF3C00;
-    height: 450px;
-    width: 300px;
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
-    position: relative;
-    margin-right: 30px;
-
-}
-
-.imgOfTheMonth {
-    height: 400px;
-    width: 298px;
-    border: 2px solid #FF1A00;
-}
-
-.portrait {
-    width: 297px;
-    height: 292px;
-    align-items: center;
-    border: 0px;
-}
-
-img {
-    width: 533px;
-    height: 300px;
+#articles{
+    width: 75%;
+    min-height: 1450px;
+    max-height: 7250px;
     float: left;
-    border: 5px solid #666666;
 }
 
 .img {
@@ -140,14 +66,24 @@ img {
     margin-bottom: 10px;
 }
 
-.desc {
-    width: 100%;
-    height: 300px;
-    border: 2px solid #666666;
+img.screenshot{
+    margin-left: 50px;
+    width: 480px;
+    height: 270px;
+    float: left;
+    transition: 0.5s;
+    border-radius: 5px;
 }
 
-.float {
-    float: right;
+img.screenshot:hover{
+    opacity: 0.5 !important;
+}
+
+.desc {
+    width: 40%;
+    height: 270px;
+    float: left;
+    margin-left: 50px;
 }
 
 .type {
@@ -155,7 +91,7 @@ img {
     border: 2px solid #AA0000;
     padding: 6px;
     font-size: 12px;
-    border-radius: 50%;
+    border-radius: 10px;
     margin: 6px;
 }
 
@@ -164,7 +100,7 @@ img {
     border: 2px solid #0000AA;
     padding: 6px;
     font-size: 12px;
-    border-radius: 50%;
+    border-radius: 10px;
     margin: 6px;
 }
 
@@ -173,7 +109,7 @@ img {
     border: 2px solid #AA3300;
     padding: 6px;
     font-size: 12px;
-    border-radius: 50%;
+    border-radius: 10px;
     margin: 6px;
 }
 
@@ -182,13 +118,13 @@ img {
     border: 2px solid #00AA00;
     padding: 6px;
     font-size: 12px;
-    border-radius: 50%;
+    border-radius: 10px;
     margin: 6px;
 }
 
 .date {
     float: right;
-    border: 2px solid #222222;
+    border: 2px solid #111111;
     padding: 6px;
     font-size: 12px;
     margin: 6px;
@@ -204,7 +140,7 @@ img {
 
 .title {
     float: left;
-    border: 2px solid #222222;
+    border: 2px solid #111111;
     padding: 6px;
     font-size: 25px;
     margin: 6px;
@@ -212,11 +148,107 @@ img {
 
 .description {
     float: left;
-    border: 2px solid #222222;
+    border: 2px solid #111111;
     padding: 6px;
-    font-size: 16px;
     margin: 6px;
     text-align: justify;
+}
+
+#GameOfTheMonth{
+    width: 25%;
+    min-height: 1450px;
+    max-height: 7250px;
+    float: right;
+}
+
+.gameOfTheMonth{
+    border:5px solid #333333;
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+}
+
+.imgOfTheMonth {
+    height: 400px;
+    width: 300px;
+    border: 2px solid #FF1A00;
+    border-radius: 10px;
+}
+
+ul, li{
+    margin-left: 30px;
+    margin-top: 0;
+}
+
+.links{
+    color: #3C3C3C;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.links:hover{
+    color: #FF5E00;
+}
+
+hr{
+    border: 1px solid #222222;
+}
+
+.pagination_center {
+    text-align: center;
+    height: 100px;
+  }
+  
+.pagination {
+    display: inline-block;
+}
+  
+.pagination a{
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 1px solid #222222;
+    margin: 0 4px;
+}
+
+.pagination a:hover{
+    background-color: black;
+}
+  
+.pagination a.active{
+    background-color: #FF3C00;
+    color: black;
+    transition: 0.5s;
+}
+
+.pagination a.active:hover{
+    background-color: #AA0000;
+}
+
+.pagination a.inactive{
+    color: #222222;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.pagination a.inactive:hover{
+    color: black;
+}
+
+.pagination a:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 #footer {
@@ -229,138 +261,98 @@ img {
     position: absolute;
 }
 
+img.icon{
+    background-color:#2B2B2B;
+    color: #FF3C00;
+    transition: 0.2s;
+    height: 20px;
+    width: 20px;
+}
+img.icon:hover{
+    background-color: white;
+}
+
+.heading{
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 80px;
+    font-size: 72px;
+    font-family: Compacta;
+}
+
+p.gameName{
+    margin-left: 60px;
+    margin-right: 80px;
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+p.paragraph{
+    text-align: justify;
+    font-size: 17px;
+    margin-left: 60px;
+    margin-right: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img.screen{
+    height: 720px;
+    width: 1280px;
+    margin-left: 60px;
+    margin-right: 80px;
+}
+
+img.centeredScreen{
+    height: 360px;
+    width: 640px;
+    margin-left: 60px;
+    margin-right: 80px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+img.xpscover{
+    width: 325px;
+    height: 400px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+img.swcover{
+    width: 251px;
+    height: 408px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.social{
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social:hover{
+    color: #FF3C00;
+}
+
+.portrait {
+    width: 297px;
+    height: 292px;
+    align-items: center;
+    border: 0px;
+    margin: 0;
+}
+
 .center {
     display:block;
     margin-left:auto;
     margin-right:auto;
     width:653;
-}
-
-#theme-swapper {
-    display: inline;
-    float: right;
-}
-
-.link {
-    color: #dddddd;
-    text-decoration: none;
-}
-
-.newanchor {
-    font-family: Lexend Deca, sans-serif;
-    color: white;
-    text-decoration: none;
-}
-
-p {
-    font-family: "Neuzeit Grotesk", sans-serif;
-    font-size: 16px;
-}
-
-.dropbtn {
-    background-color: #FF3C00;
-    border: none;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    float: left;
-    font-family: "Igiari", sans-serif;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #FF4D00;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    color: white;
-    font-family: "Igiari", sans-serif;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #FF1A00;
-}
-
-.dropdown-content p {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-family: "Igiari", sans-serif;
-}
-
-.dropdown-content p:hover {
-    background-color: #FF1A00;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #FF1A00;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-input {
-    font-family: "Neuzeit Grotesk";
-}
-
-textarea {
-    font-family: "Neuzeit Grotesk";
-}
-
-p.customfont1 { 
-    font-family: "Ninja Garden", Verdana, Tahoma;
-    color: #FF3C00;
-    font-size: 72px;
-    float: right;
-}
-
-p.customfont2 { 
-    font-family: "Edo SZ", Verdana, Tahoma;
-    color: #FF3C00;
-    font-size: 72px;
-    text-align: center;
-}
-
-.customFont1 {
-    font-family: "Ninja Garden", Verdana, Tahoma;
-}
-
-.customFont2 {
-    font-family: "Edo SZ", Verdana, Tahoma;
-}
-
-.customFont3 {
-    font-family: "Neuzeit Grotesk", Verdana, Tahoma;
-}
-
-.customFont4 {
-    font-family: "Igiari", Verdana, Tahoma;
-}
-
-.customFont5 {
-    font-family: "Face Your Fears", Verdana, Tahoma;
 }
